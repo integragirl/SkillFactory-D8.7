@@ -1,4 +1,4 @@
-import django_heroku
+#import django_heroku
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -19,6 +19,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'tasks.apps.TasksConfig',
 ]
+
+STATIC_URL = '/static/'
 
 ROOT_URLCONF = 'todoapp.urls'
 
@@ -63,7 +65,7 @@ DATABASES = {
 LANGUAGE_CODE = 'ru-RU'
 
 
-django_heroku.settings(locals())
+#django_heroku.settings(locals())
 
 
 def get_cache():

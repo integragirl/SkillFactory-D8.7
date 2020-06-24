@@ -12,4 +12,14 @@
     <li>Список задач по категориям пуст. Попробуйте добавить их из админки</li>
   {% endfor %}
   </ul>
+
+  <h1>Приоритеты</h1>
+  <ul>
+  {% for pr, count in counts_pr.items %}
+    <li><span class="badge badge-info">{{ pr }}: {{ count }}</span></li>
+  {% empty %}
+    <li>Список приоритетов пуст. Нужно рассчитать кэш</li>
+  {% endfor %}
+  </ul>
+
 {% endblock %}

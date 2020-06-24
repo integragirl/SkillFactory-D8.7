@@ -23,6 +23,7 @@
               <i class="fas fa-clipboard-list"></i>&nbsp;<a href="{% url "tasks:list" %}">задачи</a>
             {% endif %}
 	    <i class="fas fa-cog"></i>&nbsp;<a href='{% url 'admin:index' %}'>админка</a>
+        <i></i>&nbsp;<a href='{% url 'tasks:date_cache' %}'>Тест даты (кэш)</a>
           {% endblock %}
         </div>
 

@@ -6,6 +6,7 @@ from django.urls import reverse
 class Category(models.Model):
     slug = models.CharField(max_length=128)
     name = models.CharField(max_length=256)
+    todos_count = models.PositiveIntegerField(default=0)
 
     class Meta:
         verbose_name = 'Категория'

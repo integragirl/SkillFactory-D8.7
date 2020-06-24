@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Тест даты (кэш){% endblock %}
+
+{% block main_content %}
+  <h1>Дата</h1>
+  <p>{{ date_cache|date:"D d M Y" }} {{ date_cache|time:"H:i:s" }}</p>
+{% endblock %}
